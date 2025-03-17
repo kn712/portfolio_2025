@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       sr.reveal(".fb-title", {});
       sr.reveal(".fb-intro", { delay: 50 });
       sr.reveal(".top-title", { delay: 100 });
-      sr.reveal(".pj-item", { interval: 100 });
+      sr.reveal(".pj-card", { interval: 150 });
       sr.reveal(".jn-sentence", { delay: 100 });
       sr.reveal(".contacts", { delay: 100 });
 
@@ -71,5 +71,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 300);
   }, 600);
 });
-
-

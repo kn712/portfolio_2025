@@ -1,16 +1,14 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .container {
     width: 95%;
   }
   .sidebar {
     display: none;
   }
-  /* .top-title {
-    padding: 5% 0 7% 0;
-  } */
   /* PROEJCTS */
-  .pj-item {
-    flex: 1 0 40%;
+  .pj-card {
+    flex: 1 0 48%;
+
   }
 }
 @media only screen and (max-width: 900px) {
@@ -58,7 +56,7 @@
   }
 
   /* PROJECTS */
-  .pj-items {
+  .pj-card {
     width: 100%;
   }
 
@@ -105,7 +103,7 @@
     top: 30vh;
   }
   /* PROEJCTS */
-  .pj-item {
+  .pj-card {
     flex: 1 0 100%;
   }
   @media only screen and (max-width: 500px) {
@@ -117,6 +115,9 @@
     }
     .top-title h4 {
       font-size: 15px;
+    }
+    .down {
+      margin-top: 40vh;
     }
     /* MAIN */
     .fb-title {
@@ -136,7 +137,7 @@
       text-align: center;
     }
     /* PROEJCTS */
-    .pj-item {
+    .pj-card {
       flex: 1 0 100%;
     }
 
@@ -204,6 +205,6 @@
     .contacts p {
       margin: 0vh 0 5vh 0;
       font-size: 18px;
+    }
   }
-}
 }
