@@ -28,9 +28,16 @@
     />
   </head>
   <body>
-    <div class="container">
+    <!-- LOADER -->
+    <div id="loader-container">
+      <div class="loader-wrapper">
+        <div class="loader"></div>
+        <span class="loader-text">Ning.</span>
+      </div>
+    </div>
+    <div class="hidden" id="main-content">
       <!-- NAVIGATION -->
-      <nav id="nav-container">
+      <nav id="header">
         <div class="nav-logo">
           <a href="#home"
             ><img
@@ -39,24 +46,28 @@
           /></a>
         </div>
         <div class="nav-menu">
-          <ul class="nav-menu-list">
-            <li class="nav-menu-list-item">
-              <a href="#home" class="nav-link">Home</a>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
             </li>
             <li class="nav-menu-list-item">
-              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li class="nav-menu-list-item">
-              <a href="#my_journey" class="nav-link">My Journey</a>
+              <a href="#my_journey">My Journey</a>
             </li>
             <li class="nav-menu-list-item">
-              <a href="#contacts" class="nav-link">Contacts</a>
+              <a href="#contacts">Contacts</a>
             </li>
-            <li class="nav-menu-list-item">
+            <li>
               <div class="resume-button-responsive">
-                <button class="btn">
-                  Resume<i class="uis uis-download-alt"></i>
-                </button>
+                <a
+                  href="assets/resume/ningke_resume_2025.pdf"
+                  class="btn"
+                  download
+                >
+                  Resume <i class="uis uis-download-alt"></i>
+                </a>
               </div>
             </li>
           </ul>
@@ -70,193 +81,305 @@
           <i class="uil uil-bars" onclick="toggleMenu()"></i>
         </div>
       </nav>
-
-      <div class="sidebar">
-        <ul>
-          <li>
-            <a
-              href="mailto:ningke947@gmail.com"
-              aria-label="LinkedIn"
-              target="_blank"
-              rel="noreferrer"
-              ><i class="uil uil-envelope-upload"></i
-              ><span class="sidebar-text">E-mail</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/kn712"
-              aria-label="GitHub"
-              target="_blank"
-              rel="noreferrer"
-              ><i class="uil uil-github-alt"></i
-              ><span class="sidebar-text">Github</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ning-ke/"
-              aria-label="LinkedIn"
-              target="_blank"
-              rel="noreferrer"
-              ><i class="uil uil-linkedin-alt"></i
-              ><span class="sidebar-text">LinkedIn</span></a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <!-- MAIN -->
-      <section class="featured-box">
-        <div class="fb-title">
-          <h3>Hello, my name is</h3>
-          <!-- <span class="typedText"></span> -->
-          <h1>Ning Ke.</h1>
+      <div class="container">
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a
+                href="mailto:ningke947@gmail.com"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="uil uil-envelope-upload"></i
+                ><span class="sidebar-text">E-mail</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/kn712"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="uil uil-github-alt"></i
+                ><span class="sidebar-text">Github</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ning-ke/"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="uil uil-linkedin-alt"></i
+                ><span class="sidebar-text">LinkedIn</span></a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="fb-intro">
-          <span>“</span>
-          <p>
-            I’m a design-mined, detail-oriented <b>Student Software Developer</b><br />With
-            <b>7 years</b> of professional experience in <b>Visual Design</b><br />Aspiring to
-            blend efficient code with user-centered design
-          </p>
-          <span>”</span>
-        </div>
-      </section>
 
-    <section class="projects">
-        <div class="top-title">
+        <!-- MAIN -->
+        <section class="featured-box" id="home">
+          <div class="fb-title">
+            <h3>Hello, my name is</h3>
+            <!-- <span class="typedText"></span> -->
+            <h1>Ning Ke.</h1>
+          </div>
+          <div class="fb-intro">
+            <span>“</span>
+            <p>
+              I’m a
+              <b> front-end Web Developer</b> with 7 years of
+              <b>Visual Design</b> experience, passionate about
+              <b>front-end development</b> and blending efficient code with
+              user-centered design.
+            </p>
+            <span>”</span>
+          </div>
+          <div class="arrow down">
+            <a href="#projects"><i class="uit uit-arrow-circle-down"></i></a>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+          <div class="top-title">
             <h2>Some Projects I've Built</h2>
             <h4>A Collection of My Past Work; Continuously Expanding...</h4>
-        </div>
-        <div class="pj-items">
-            <div class="pj-item"></div>
-            <div class="pj-item"></div>
-            <div class="pj-item"></div>
-            <div class="pj-item"></div>
-            <div class="pj-item"></div>
-            <div class="pj-item"></div>
-        </div>
-    </section>
-
-    <section class="journey">
-        <div class="top-title">
-            <h2>A Little Bit of My Journey</h3>
-                <h4>Grateful for Every Experience Along the Way</h4>
-        </div>
-        <div class="jn-intro">
-        <div class="jn-img">
-            <img src="/assets/image/avatar.jpg">
-        </div>
-        <div class="jn-text">
-            <h2>About Me</h2>
-            <p>Hi, I’m Ning Ke, a junior student at <b>California State University, East Bay</b>, majoring in <b>Computer Science (BS)</b>.
-
-                <br><br>I started my journey in Visual Design, creating impactful visuals and user experiences. Now, as a front-end developer with a design background, I bridge the gap between aesthetics and functionality.
-                
-                <br><br>I focus on writing clean, efficient code while ensuring a seamless and intuitive user experience.
+          </div>
+          <div class="pj-cards">
+            <div class="pj-card">
+              <img src="assets/image/microblog.png" />
+              <div class="pj-card-content">
+                <h3>Microblog</h3>
+                <p>
+                  Developed a full-stack web application using Flask to create a
+                  microblogging platform with essential social features.
                 </p>
-        </div>
-        </div>
-        <div class="jn-sentence">        <p>
-            Every pixel, line of code, and interaction shapes the overall experience. I thrive on solving problems through a balance of design and technical execution—continuously learning, iterating, and improving along the way.</p>
+                <div class="pj-tools">
+                  <span>Flask</span><span>Bootstrap</span><span>PostgreSQL</span
+                  ><span>Docker</span><span>Python</span><span>JavaScript</span
+                  ><span>Html/CSS</span>
+                </div>
+                <div class="pj-links">
+                  <a><i class="uil uil-link"></i></a>
+                  <a><i class="uil uil-github-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="pj-card">
+              <img src="assets/image/microblog.png" />
+              <div class="pj-card-content">
+                <h3>Microblog</h3>
+                <p>
+                  Developed a full-stack web application using Flask to create a
+                  microblogging platform with essential social features.
+                </p>
+                <div class="pj-tools">
+                  <span>Flask</span><span>Bootstrap</span><span>PostgreSQL</span
+                  ><span>Docker</span><span>Python</span><span>JavaScript</span
+                  ><span>Html/CSS</span>
+                </div>
+                <div class="pj-links">
+                  <a><i class="uil uil-link"></i></a>
+                  <a><i class="uil uil-github-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="pj-card">
+              <img src="assets/image/microblog.png" />
+              <div class="pj-card-content">
+                <h3>Microblog</h3>
+                <p>
+                  Developed a full-stack web application using Flask to create a
+                  microblogging platform with essential social features.
+                </p>
+                <div class="pj-tools">
+                  <span>Flask</span><span>Bootstrap</span><span>PostgreSQL</span
+                  ><span>Docker</span><span>Python</span><span>JavaScript</span
+                  ><span>Html/CSS</span>
+                </div>
+                <div class="pj-links">
+                  <a><i class="uil uil-link"></i></a>
+                  <a><i class="uil uil-github-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        </div>
+        <section class="journey" id="my_journey">
+          <div class="top-title">
+            <h2>A Little Bit of My Journey</h2>
+            <h4>Grateful for Every Experience Along the Way</h4>
+          </div>
+          <div class="jn-intro">
+            <div class="jn-img">
+              <img src="/assets/image/avatar.jpg" />
+            </div>
+            <div class="jn-text">
+              <h3>About Me</h3>
+              <p>
+                Hi, I’m Ning Ke, a junior student at
+                <b>California State University, East Bay</b>, majoring in
+                <b>Computer Science (BS)</b>.
 
-        <div class="jn-info">
+                <br /><br />I started my journey in Visual Design, creating
+                impactful visuals and user experiences. Now, as a front-end
+                developer with a design background, I bridge the gap between
+                aesthetics and functionality.
+
+                <br /><br />I focus on writing clean, efficient code while
+                ensuring a seamless and intuitive user experience.
+              </p>
+            </div>
+          </div>
+          <div class="jn-sentence">
+            <p>
+              Every pixel, line of code, and interaction shapes the overall
+              experience. I thrive on solving problems through a balance of
+              design and technical execution—continuously learning, iterating,
+              and improving along the way.
+            </p>
+          </div>
+
+          <div class="jn-info">
             <div class="jn-table">
-                <h3>Skills</h3>
-                <div class="jn-table-column">
-                    <h4>Language</h4>
-                    <ul>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C Programming</li>
-                        <li>SQL</li>
-                        <li>OCaml</li>
-                    </ul>
-                </div>
-                <div class="jn-table-column">
-                    <h4>Dev Tools</h4>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>React</li>
-                        <li>Bootstrap</li>
-                        <li>Flask</li>
-                        <li>Github</li>
-                        <li>PostgreSQL</li>
-                    </ul>
-                </div>
-                <div class="jn-table-column">
-                    <h4>Design</h4>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Adobe Photoshop</li>
-                        <li>Adobe Illustrator</li>
-                        <li>CorelDraw</li>
-                        <li>Sketch</li>
-                    </ul>
-                </div>
+              <h3>Skills</h3>
+              <div div class="jn-table-column">
+                <ul>
+                  <h4>Language</h4>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C Programming</li>
+                  <li>SQL</li>
+                  <li>OCaml</li>
+                </ul>
+
+                <ul>
+                  <h4>Dev Tools</h4>
+                  <li>Node.js</li>
+                  <li>React</li>
+                  <li>Bootstrap</li>
+                  <li>Flask</li>
+                  <li>Github</li>
+                  <li>PostgreSQL</li>
+                  <li>VS Code</li>
+                </ul>
+
+                <ul>
+                  <h4>Design</h4>
+                  <li>Figma</li>
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe Illustrator</li>
+                  <li>CorelDraw</li>
+                  <li>Sketch</li>
+                </ul>
+              </div>
             </div>
 
             <div class="jn-edu-table">
-                <h3>Education</h3>
-                    <div class="jn-edu-table-row">
-                               <h4>California State University, East Bay </h4> 
-                               <ul>
-                                <li>B.S. in Computer Science | GPA: 3.8/4.0</li>
-                                <li>08. 2024 - 05. 2026 (Expected)</li>
-                            </ul>
-                            <h4>The State University of New York at Stony Brook </h4> 
-                            <ul>
-                             <li>B.S. in Computer Science | GPA: 3.6/4.0</li>
-                             <li>08.2022 - 01.2024 (Transferred out)</li>
-                         </ul>
-                         <h4>Zhejiang Business Technology Institute (China)</h4> 
-                         <ul>
-                          <li>A.S. in Computer Information Management</li>
-                          <li>09.2012 - 06.2015 (Graduated)</li>
-                      </ul>
-                    </div>
-
+              <h3>Education</h3>
+              <div class="jn-edu-table-row">
+                <h4>California State University, East Bay</h4>
+                <ul>
+                  <li>B.S. in Computer Science | GPA: 3.8/4.0</li>
+                  <li>08. 2024 - 05. 2026 (Expected)</li>
+                </ul>
+                <h4>The State University of New York at Stony Brook</h4>
+                <ul>
+                  <li>B.S. in Computer Science | GPA: 3.6/4.0</li>
+                  <li>08.2022 - 01.2024 (Transferred out)</li>
+                </ul>
+                <h4>Zhejiang Business Technology Institute (China)</h4>
+                <ul>
+                  <li>A.S. in Computer Information Management</li>
+                  <li>09.2012 - 06.2015 (Graduated)</li>
+                </ul>
+              </div>
             </div>
 
             <div class="jn-exp-table">
-                <h3>Experience</h3>
-                    <div class="jn-exp-table-row">
-                            <h4>Brand Visual Expert @ PROYA Cosmetics</h4> 
-                            <h5>09.2019 - 02.2022</h5>
-                             <p>Led brand visual identity development, key visual design for online and offline stores, and new media strategies to enhance brand consistency and awareness while aligning design initiatives with strategic goals.</p>
-                    </div>
-                    
-                    <div class="jn-exp-table-row">
-                        <h4>Senior Visual Designer @ WangQu E-commerce</h4> 
-                        <h5>12.2014 - 02.2019</h5></div>
+              <h3>Experience</h3>
+              <div class="jn-exp-table-row">
+                <h4>Brand Visual Expert @ PROYA Cosmetics</h4>
+                <h5>09.2019 - 02.2022</h5>
+                <p>
+                  Led brand visual identity development, key visual design for
+                  online and offline stores, and new media strategies to enhance
+                  brand consistency and awareness while aligning design
+                  initiatives with strategic goals.
+                </p>
+              </div>
+
+              <div class="jn-exp-table-row">
+                <h4>Senior Visual Designer @ WangQu E-commerce</h4>
+                <h5>12.2014 - 02.2019</h5>
+              </div>
             </div>
+          </div>
+        </section>
 
-        </div>
-
-        
-    </section>
-
-    <section class="contacts">
-        <div class="top-title">
-            <h2>Get In Touch</h3>
-                <h4>Let's Work Together!</h4>
-        </div>
-        <p> I'm currently seeking a Front-end Software Engineer internship to further my growth.
-            Feel free to reach out! Looking forward to collaborating and learning from others. </p>
-        <div class="contacts-btn">
+        <section class="contacts" id="contacts">
+          <div class="top-title">
+            <h2>Get In Touch</h2>
+            <h4>Let's Work Together!</h4>
+          </div>
+          <p>
+            I'm currently seeking a Front-end Software Engineer internship to
+            further my growth. <br />Feel free to reach out! Looking forward to
+            collaborating and learning from others.
+          </p>
+          <div class="contacts-btn">
             <button class="btn">
-              Start a Conversation
+              <a
+                href="mailto:ningke947@gmail.com"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Start a Conversation<i class="uil uil-comment-dots"></i
+              ></a>
             </button>
           </div>
-    </section>
+        </section>
+        <footer>
+          <div class="arrow">
+            <a href="#home"><i class="uit uit-arrow-circle-up"></i></a>
+          </div>
+          <div class="footer-title">
+            <!-- <h1>Ning Ke.</h1>  -->
+          </div>
+          <div class="contacts-icon">
+            <div class="circle">
+              <a
+                href="https://github.com/kn712"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="uil uil-github-alt"></i
+              ></a>
+            </div>
+            <div class="circle">
+              <a
+                href="https://www.linkedin.com/in/ning-ke/"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="uil uil-linkedin-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>&copy Ning Ke - 2025</p>
+          </div>
+        </footer>
+      </div>
     </div>
-    <!-- TYPING JS -->
+
+    <!-- EFFECT JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
   </body>

@@ -1,29 +1,50 @@
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+  .sidebar {
+    display: none;
+  }
+  /* .top-title {
+    padding: 5% 0 7% 0;
+  } */
+  /* PROEJCTS */
+  .pj-item {
+    flex: 1 0 40%;
+  }
+}
 @media only screen and (max-width: 900px) {
+  /* NAVTGATION */
   .nav-menu.responsive {
     left: 0;
   }
   .nav-menu {
     position: fixed;
-    top: 100px;
+    top: 10vh;
     left: -100%;
-    backdrop-filter: blur(20px);
+    background: var(--primary-color);
     width: 100%;
     height: 100vh;
     transition: 0.2s;
   }
-  .nav-menu-list {
+  .nav-menu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10%;
     line-height: 4;
   }
+  .nav-menu a {
+    font-size: 23px;
+    font-weight: 600;
+  }
+
   .resume-button-responsive {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
   }
-  .resume-button{
+  .resume-button {
     display: none;
   }
   .hamburger-btn {
@@ -35,4 +56,154 @@
     font-size: 40px;
     cursor: pointer;
   }
+
+  /* PROJECTS */
+  .pj-items {
+    width: 100%;
+  }
+
+  /* JOURNEY */
+  .jn-intro {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+  }
+  .jn-img {
+    margin: 0 auto;
+  }
+  .jn-text {
+    margin: 8vw;
+  }
+  .jn-text p {
+    top: 5vh;
+  }
+  .jn-sentence {
+    margin-bottom: 18vh;
+  }
+  .jn-info {
+    width: 90%;
+  }
+  /* CONTACTS */
+  .contacts p {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* MAIN */
+  .fb-title {
+    margin-top: 20vh;
+    width: 100%;
+  }
+  .fb-intro {
+    width: 100%;
+  }
+  .fb-intro {
+    margin-bottom: -30vh;
+  }
+  .fb-intro span:nth-child(3) {
+    position: relative;
+    top: 30vh;
+  }
+  /* PROEJCTS */
+  .pj-item {
+    flex: 1 0 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    .top-title {
+      padding: 5vh 0 5vh 0;
+    }
+    .top-title h2 {
+      font-size: 35px;
+    }
+    .top-title h4 {
+      font-size: 15px;
+    }
+    /* MAIN */
+    .fb-title {
+      margin-top: 15vh;
+      width: 100%;
+    }
+
+    .fb-intro {
+      width: 100%;
+    }
+    .fb-intro {
+      margin-bottom: -35vh;
+    }
+    .fb-intro p {
+      font-size: 27px;
+      margin-top: 7vh;
+      text-align: center;
+    }
+    /* PROEJCTS */
+    .pj-item {
+      flex: 1 0 100%;
+    }
+
+    /* JOURNEY */
+    .journey {
+      margin-top: 2vh;
+    }
+
+    .jn-text p {
+      font-size: 18px;
+    }
+    .jn-sentence {
+      width: 80%;
+      margin: 5vh auto;
+    }
+    .jn-sentence p {
+      font-size: 17px;
+    }
+    .jn-table {
+      padding: 3vh 0 3vh 0;
+    }
+    .jn-table-column {
+      padding: 5vh 0;
+      text-align: center;
+    }
+    .jn-info h3 {
+      font-size: 22px;
+    }
+    .jn-table-column h4 {
+      font-size: 18px;
+    }
+    .jn-table-column li {
+      font-size: 16px;
+    }
+    .jn-edu-table-row {
+      padding: 5vh 0;
+    }
+    .jn-info h3 {
+      font-size: 22px;
+    }
+    .jn-edu-table-row {
+      padding: 5vh 0;
+    }
+    .jn-edu-table-row h4 {
+      font-size: 18px;
+    }
+    .jn-edu-table-row li {
+      font-size: 16px;
+    }
+    .jn-exp-table {
+      margin: 0vh auto;
+    }
+    .jn-exp-table-row {
+      padding: 5vh 0;
+      margin-bottom: 0;
+    }
+    .jn-exp-table-row h4 {
+      font-size: 18px;
+    }
+    .jn-exp-table-row h5 {
+      font-size: 16px;
+    }
+
+    /* CONTACTS */
+    .contacts p {
+      margin: 0vh 0 5vh 0;
+      font-size: 18px;
+  }
+}
 }
